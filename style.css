@@ -258,7 +258,6 @@ h1 {
 .before-h1 {
   color: #f16101;
   font-size: 20px;
-  padding-top: 3rem;
 }
 
 .about-headline {
@@ -274,10 +273,11 @@ h1 {
   padding: 5%;
   text-align: center;
   width: 80%;
+  font-size: 0.8rem;
 }
 
 .about {
-  background-image: url("/images/mobile_intro_bg.png");
+  background-image: url("/images/about_bg_01.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,10 +298,11 @@ h1 {
   background-color: #fff;
   padding: 2rem 5% 0;
   align-items: center;
+  text-align: center;
 }
 
 .cc-logo h2 {
-  font-size: 28.5px;
+  font-size: 1.75rem;
   line-height: 1.5;
   text-align: center;
 }
@@ -348,6 +349,64 @@ div .img-logo {
     drop-shadow(0 0 0 rgb(182, 182, 182));
 }
 
+#partner {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#partner h2 {
+  filter: brightness(0) invert() opacity(0.3)
+    drop-shadow(0 0 0 rgb(182, 182, 182));
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.partner img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  filter: brightness(0) invert() opacity(0.2)
+    drop-shadow(0 0 0 rgb(182, 182, 182));
+}
+
+.partner-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 0 15%;
+  margin-top: 1rem;
+}
+
+.partner:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.filter img {
+  width: 120%;
+  height: auto;
+  filter: brightness(0) invert() opacity(0.4)
+    drop-shadow(0 0 0 rgb(182, 182, 182));
+}
+
+.mozilla img {
+  width: 60%;
+  height: auto;
+}
+
+#partner .hr {
+  border-color: rgb(239, 81, 60);
+}
+
+.gartner {
+  width: 200%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li .airbnb img {
+  margin-left: 0;
+}
+
 /* Footer Section */
 
 #footer {
@@ -356,11 +415,11 @@ div .img-logo {
   place-items: center;
   text-align: left;
   background-color: #fff;
-  padding: 2rem 5%;
+  padding: 0 10%;
   line-height: 1.5;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 80%;
 }
 
 #footer img {
@@ -370,6 +429,10 @@ div .img-logo {
 
 #footer ul li {
   font-size: 0.75em;
+}
+
+.nav-bar {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -398,16 +461,34 @@ div .img-logo {
     z-index: 1;
   }
 
-  .nav-bar img {
-    width: 20%;
+  /* hover effect on nav items */
+
+  .nav-item a:hover {
+    color: #f16101;
+  }
+
+  .nav-item a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .nav-item a::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px #f16101;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-bar a img {
+    width: 60%;
     height: auto;
   }
 
   .nav-item:not(:first-child) {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
-  a {
+  .nav-list-item .nav-item a {
     text-decoration: none;
   }
 
@@ -416,11 +497,253 @@ div .img-logo {
     color: #f16101;
   }
 
+  .nav-list-item .nav-color a {
+    font-size: 0.92rem;
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+  }
+
   .nav-border {
     height: auto;
     padding: 0.2rem 0.5rem;
     position: relative;
     border: 5px solid #f16101;
+    width: 6rem;
+  }
+
+  .bg-wrap {
+    background: url(./images/main_big.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    height: auto;
+  }
+
+  #main {
+    width: 70%;
+    padding-left: 8%;
+    padding-bottom: 6rem;
+  }
+
+  #main .before-h12 {
+    color: #f16101;
+    font-size: 40px;
+    padding-top: 4rem;
+    line-height: 1;
+    padding-bottom: 0%;
+  }
+
+  h1 {
+    font-weight: 700;
+    line-height: 1;
+    font-size: 61px;
+    background: linear-gradient(to right, #f16101, #6f3c3c, #f16101, #ff1100);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .description-container {
+    width: 80%;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .landing h2 {
+    text-align: left;
+    font: bold 36px Verdana;
+  }
+  .landing .paragraph {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 0;
+  }
+
+  .program-list {
+    width: 90%;
+    padding: 0 5%;
+    margin: 0;
+  }
+
+  #main-program {
+    text-align: center;
+    padding-top: 2rem;
+    color: rgb(255, 255, 255);
+    height: auto;
     width: 100%;
+    margin: 0px auto;
+    padding-bottom: 2rem;
+  }
+
+  #main-program .program-item {
+    border: 3px solid #fff;
+  }
+
+  #main-program .bg-program {
+    width: calc(18% - 0.0075em);
+    height: auto;
+    align-items: center;
+    display: inline-block;
+    margin: 2rem 0 0 0;
+    padding: 0.5rem 0.4rem;
+    text-align: center;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  h5 {
+    text-decoration: underline;
+    color: #fff;
+    padding-top: 0rem;
+    font-size: 12px;
+  }
+
+  .bg-program li h3 {
+    color: rgb(239, 81, 60);
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .speaker-info {
+    display: inline-flex;
+    flex-direction: row;
+    width: calc(42% - 10px);
+    padding: 2rem 0 0;
+    margin: 0;
+  }
+
+  .speaker-info:not(:first-child) {
+    padding-left: 2rem;
+  }
+
+  .speaker-info img {
+    width: 100%;
+    height: auto;
+  }
+
+  .before-h1 {
+    display: none;
+  }
+
+  .about-headline {
+    color: #ff1100;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 6rem 15% 0;
+    width: 70%;
+  }
+
+  .cc-logo {
+    width: 90%;
+    background-color: #fff;
+    padding: 2rem 5% 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  div .img-logo {
+    border: 2px solid rgba(228, 222, 222, 0.555);
+    width: 40%;
+    padding: 2rem;
+    margin: auto;
+  }
+
+  .about-description {
+    background-color: #fff;
+    margin: 1rem 5% 2rem;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+    font-size: 0.85rem;
+  }
+
+  .email-contact {
+    margin-bottom: 0;
+    font-size: initial;
+  }
+
+  .about a {
+    font-size: 12px;
+    padding-top: 0;
+    color: #333;
+  }
+
+  .cc-logo h2 {
+    font-size: 1.875rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 70%;
+    padding: 0 15% 0;
+  }
+
+  .cc-logo p {
+    width: 90%;
+    padding: 0 5% 0;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  #partner {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  #partner h2 {
+    filter: brightness(0) invert() opacity(0.3)
+      drop-shadow(0 0 0 rgb(182, 182, 182));
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .partner img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    filter: brightness(0) invert() opacity(0.2)
+      drop-shadow(0 0 0 rgb(182, 182, 182));
+  }
+
+  .partner-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 0 15%;
+    margin-top: 1rem;
+  }
+
+  .partner:not(:first-child) {
+    margin-left: 2rem;
+  }
+
+  .filter img {
+    width: 120%;
+    height: auto;
+    filter: brightness(0) invert() opacity(0.4)
+      drop-shadow(0 0 0 rgb(182, 182, 182));
+  }
+
+  .mozilla img {
+    width: 60%;
+    height: auto;
+  }
+
+  #partner .hr {
+    border-color: rgb(239, 81, 60);
+  }
+
+  .gartner {
+    width: 200%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  li .airbnb img {
+    margin-left: 0;
   }
 }
