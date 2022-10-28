@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# portfolio-set-up
+## First Capstone Project
 
 > This is a project to implement how to Use local storage to save user input.
 
@@ -9,7 +9,6 @@
 - HTML
 - CSS
 - JavaScript
-- Git
 
 ## Getting Started
 
@@ -26,7 +25,7 @@ Web Browser (Google Chrome recommended)
 
 ## How to Run
 
-[linkToSource](https://github.com/PeteUgwu/Portfolio-set-up/)
+[linkToSource](https://github.com/PeteUgwu/First-Capstone-Project/tree/main)
 
 To run the project do the following:
 
@@ -56,6 +55,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - partners/micronauts
+- Original design idea by Cindy Shin in Behance.
 
 ## 📝 License
 
