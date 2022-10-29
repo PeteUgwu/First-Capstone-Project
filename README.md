@@ -2,17 +2,18 @@
 
 ## First Capstone Project
 
-> This is a project to implement how to Use local storage to save user input.
+> This is a project to implement an online website for a conference.
 
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
+- Git and Github
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+Read down the page for instructions and requirements
 
 ### Prerequisites
 
@@ -21,7 +22,7 @@ Web Browser (Google Chrome recommended)
 
 ## Live Demo
 
-[Live Demo Link](https://peteugwu.github.io/Portfolio-set-up/)
+[Live Demo Link]()
 
 ## How to Run
 
@@ -55,6 +56,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - partners/micronauts
+
 - Original design idea by Cindy Shin in Behance.
 
 ## 📝 License
